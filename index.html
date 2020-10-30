@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>MOOVEM WORKOUTS</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,15 +12,17 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#16df87">
+  <meta name="msapplication-TileColor" content="#2a2830">
+  <meta name="theme-color" content="#2a2830">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="css/video-player.css"> -->
 
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -31,23 +33,30 @@
   <section>
     <div class='player-container'>
       <div class='player'>
-        
+
         <video id='videoSrc' controls playsinline>
-          <source src='https://storage.googleapis.com/www.garysylvester.co/moov-em/img/yoga-flow_1.mp4' type="video/mp4">
+          <source src='https://storage.googleapis.com/www.garysylvester.co/moov-em/img/yoga-flow_1.mp4'
+            type="video/mp4">
         </video>
       </div>
   </section>
 
   <div id="navDrawer" class="nav-drawer">
     <div onclick="expandNav()" class='menu-btn'>
-      <img id="expander" onclick="rotateNav()" src="img/open.svg"/>
+      <img id="expander" onclick="rotateNav()" src="img/open.svg" />
     </div>
     <ul class="navigation" onclick="closeNav()">
-      <li><h5>WORKOUTS</h5></li>
-      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/yoga-flow_1.mp4')"><img src="img/thumb1.png"></li>
-      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video2.mp4')"><img src="img/thumb2.png"></li>
-      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video3.mp4')"><img src="img/thumb3.png"></li>
-      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video4.mp4')"><img src="img/thumb4.png"></li>
+      <li>
+        <h5>WORKOUTS</h5>
+      </li>
+      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/yoga-flow_1.mp4')"><img
+          src="img/thumb1.png"></li>
+      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video2.mp4')"><img
+          src="img/thumb2.png"></li>
+      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video3.mp4')"><img
+          src="img/thumb3.png"></li>
+      <li onclick="videoUrl('https://storage.googleapis.com/www.garysylvester.co/moov-em/img/video4.mp4')"><img
+          src="img/thumb4.png"></li>
     </ul>
   </div>
 
